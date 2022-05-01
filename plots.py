@@ -70,3 +70,15 @@ plt.plot(x,y, "r-")
 plt.xlabel('X - Axis')
 plt.ylabel('Y - Axis')
 plt.show()
+
+# Plot green dots using the argument "go"
+
+plt.figure(figsize=(10,5))
+
+x = np.linspace(0, 10, 1000)
+y = np.sin(x)
+
+plt.plot(x,y, "go")
+plt.xlabel('X - Axis')
+plt.ylabel('Y - Axis')
+plt.show()
