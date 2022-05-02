@@ -29,3 +29,15 @@ plt.ylabel(r'$Y$' , fontsize = 18)
 plt.title("$Sin(x) $ $ & $ $ Cos(x)$" ,fontsize = 14)
 plt.legend(loc = 'upper right') # Legend will be placed at upper right position
 plt.show()
+
+#Changing the line style
+
+plt.figure(figsize=(10,5))
+x = np.array([1,2,3,4,5,6])
+y1 = np.power(x,2)
+y2 = np.power(x,3)
+plt.plot(x,y1, "b-" , label = '$y1 = x^2$') # Setting up legends
+plt.plot(x, y2,color='red',linewidth=1.0,linestyle='--') # Setting up legends plt.xlabel("X - Axis")
+plt.ylabel("Y - Axis")
+plt.legend(loc='upper center', fontsize='large')
+plt.show()
