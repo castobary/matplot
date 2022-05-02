@@ -118,3 +118,17 @@ plt.plot(x,y, "rv")
 plt.xlabel('X - Axis')
 plt.ylabel('Y - Axis')
 plt.show()
+
+#Plotting multiple sets of data
+
+plt.figure(figsize=(10,5))
+x = np.array([1,2,3,4,5,6])
+y1 = np.power(x,2)
+y2 = np.power(x,3)
+plt.plot(x,y1, "b-" , label = '$y1 = x^2$') # Setting up legends
+plt.plot(x,y2, "r-" ,label ='$y2 = x^3$') # Setting up legends
+plt.xlabel("X - Axis")
+plt.ylabel("Y - Axis")
+plt.legend()
+plt.tight_layout()
+plt.show()
