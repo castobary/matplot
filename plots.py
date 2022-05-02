@@ -94,3 +94,27 @@ plt.plot(x,y, "ro")
 plt.xlabel('X - Axis')
 plt.ylabel('Y - Axis')
 plt.show()
+
+# Plotting traingular dots using the argument "r^"
+
+plt.figure(figsize=(10,5))
+
+x = np.linspace(0, 10, 1000)
+y = np.sin(x)
+
+plt.plot(x,y, "r^")
+plt.xlabel('X - Axis')
+plt.ylabel('Y - Axis')
+plt.show()
+
+# Plotting traingular dots using the argument "rv"
+
+plt.figure(figsize=(10,5))
+
+x = np.linspace(0, 10, 1000)
+y = np.sin(x)
+
+plt.plot(x,y, "rv")
+plt.xlabel('X - Axis')
+plt.ylabel('Y - Axis')
+plt.show()
