@@ -132,3 +132,16 @@ plt.ylabel("Y - Axis")
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+
+#Plotting multiple sets of data
+
+x = np.linspace(0, 10, 2000)
+plt.figure(figsize=(10,6))
+plt.plot(x,np.sin(x) , label = '$Sin(X)$')
+plt.plot(x,np.cos(x) , label = '$cos(X)$')
+plt.xlabel(r'$X$' , fontsize = 18)
+plt.ylabel(r'$Y$' , fontsize = 18)
+plt.title("$Sin(x) $ $ & $ $ Cos(x)$" ,fontsize = 14)
+plt.legend(loc = 'upper right') # Legend will be placed at upper right position
+plt.show()
