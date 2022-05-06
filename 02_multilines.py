@@ -41,3 +41,14 @@ plt.plot(x, y2,color='red',linewidth=1.0,linestyle='--') # Setting up legends pl
 plt.ylabel("Y - Axis")
 plt.legend(loc='upper center', fontsize='large')
 plt.show()
+
+# Line Styling
+x = np.linspace(0, 10, 2000)
+plt.figure(figsize=(16, 9))
+plt.plot(x,np.sin(x) , label = '$Sin(X) $ $ Dashed $' , 
+         linestyle='dashed') plt.plot(x+1,np.sin(x) ,
+        label = '$Sin(X) $ $ Dashdot $' , 
+        linestyle='dashdot') plt.plot(x,np.cos(x) , label = '$cos(X) $ $ Solid $' , linestyle='solid') plt.plot(x+1,np.cos(x) , label = '$cos(X)$ $ Dotted $' , linestyle='dotted') plt.xlabel(r'$X$' , fontsize = 18)
+plt.ylabel(r'$Y$' , fontsize = 18)
+plt.title("$Sin(x) $ $ & $ $ Cos(x)$" ,fontsize = 14)
+plt.legend(loc = 'upper right' , fontsize = 14 , bbox_to_anchor=(1.2, 1.0)) # Legend will b plt.show()
