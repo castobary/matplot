@@ -44,11 +44,19 @@ plt.show()
 
 # Line Styling
 x = np.linspace(0, 10, 2000)
-plt.figure(figsize=(16, 9))
+plt.figure(figsize=(14, 9))
 plt.plot(x,np.sin(x) , label = '$Sin(X) $ $ Dashed $' , 
-         linestyle='dashed') plt.plot(x+1,np.sin(x) ,
+         linestyle='dashed') 
+plt.plot(x+1,np.sin(x) ,
         label = '$Sin(X) $ $ Dashdot $' , 
-        linestyle='dashdot') plt.plot(x,np.cos(x) , label = '$cos(X) $ $ Solid $' , linestyle='solid') plt.plot(x+1,np.cos(x) , label = '$cos(X)$ $ Dotted $' , linestyle='dotted') plt.xlabel(r'$X$' , fontsize = 18)
+        linestyle='dashdot')
+plt.plot(x,np.cos(x) , label = '$cos(X) $ $ Solid $' , 
+         linestyle='solid') 
+plt.plot(x+1,np.cos(x) , label = '$cos(X)$ $ Dotted $' ,
+         linestyle='dotted')
+plt.xlabel(r'$X$' , fontsize = 18)
 plt.ylabel(r'$Y$' , fontsize = 18)
 plt.title("$Sin(x) $ $ & $ $ Cos(x)$" ,fontsize = 14)
-plt.legend(loc = 'upper right' , fontsize = 14 , bbox_to_anchor=(1.2, 1.0)) # Legend will b plt.show()
+plt.legend(loc = 'upper right' , 
+           fontsize = 8 , bbox_to_anchor=(1.2, 1.0))
+plt.show()
