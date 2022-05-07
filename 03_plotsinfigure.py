@@ -72,5 +72,20 @@ ax1[2,1].set_title("Hyperbolic Cosine")
 ax1[2,1].set_xlabel(r'$X$' , fontsize = 14)
 ax1[2,1].set_ylabel(r'$Y$' , fontsize = 14)
 ax1[2,2].plot(x,y9,"k-")
+ax1[2,2].set_title("Exponential Function")
+ax1[2,2].set_xlabel(r'$X$' , fontsize = 18)
+ax1[2,2].set_ylabel(r'$Y$' , fontsize = 18)
 
+plt.show()
+
+y = [[1,2,3,4,5] , [10,20,30,40,50],[60,70,80,90,100] ] 
+cnt =0
+plt.figure(figsize=(10,6))
+for i in y:
+    x1 = [10,20,30,40,50]
+    cnt +=1
+    print ('iteration Number :- {}'.format(cnt))
+    print ('X1 Value :- {}'.format(x1))
+    print('Y value (i) :- {}'.format(i)) 
+    plt.plot(x1,i)
 plt.show()
