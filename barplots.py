@@ -57,3 +57,15 @@ plt.bar(num1, num1**2, width=0.5 , color = '#FF6F00')
 plt.bar(num2, num2**2, width=0.5 , color = '#FFB300')
 plt.plot()
 plt.show()
+
+# Displaying values at the top of vertical bars
+num1 = np.array([1,3,5,7,9])
+num2 = np.array([2,4,6,8,10])
+plt.figure(figsize=(10,6))
+plt.bar(num1, num1**2, width=0.5 , color = '#FF6F00')
+plt.bar(num2, num2**2, width=0.5 , color = '#FFB300') 
+for x,y in zip(num1,num1**2):
+    plt.text(x, y+0.05, '%d' % y, ha='center' , va= 'bottom') 
+for x,y in zip(num2,num2**2):
+     plt.text(x, y+0.05, '%d' % y, ha='center' , va= 'bottom')
+plt.show()
