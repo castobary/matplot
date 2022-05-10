@@ -69,3 +69,19 @@ plt.xticks([i + barWidth for i in range(len(y1))], ['Cassandra','Cherly','Alice'
 plt.legend()
 plt.show()
 np.arange(len(y1))
+
+
+# Stacked Horizontal Bar
+
+plt.style.use('seaborn-darkgrid')
+['Cassandra','Cherly','Alice','Alex']
+y1= [17,18,29,40]
+y2 = [20,21,22,23]
+plt.figure(figsize=(8,5))
+plt.barh(x1,y1,label = "Open Tickets",color = '#FF6F00') 
+plt.barh(x1,y2,label = "Closed Tickets", left = y1 , color = '#FFB300')
+plt.xlabel('$X$')
+plt.ylabel('$Y$')
+plt.title ('$Bar $ $ Chart$')
+plt.legend()
+plt.show()
